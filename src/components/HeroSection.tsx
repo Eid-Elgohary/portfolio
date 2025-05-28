@@ -1,5 +1,5 @@
-
-import React from 'react';
+import React from "react";
+import { Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -8,7 +8,9 @@ const HeroSection = () => {
         {/* Greeting */}
         <div className="mb-8">
           <span className="text-purple-300 text-lg">Hello! I Am </span>
-          <span className="text-purple-400 font-semibold text-lg">Ibrahim Manion</span>
+          <span className="text-purple-400 font-semibold text-lg">
+            Eid Elgohary
+          </span>
         </div>
 
         {/* Main Content */}
@@ -18,6 +20,7 @@ const HeroSection = () => {
             <div className="w-48 h-48 rounded-3xl overflow-hidden bg-gradient-to-br from-purple-600 to-purple-800 p-1 animate-float">
               <div className="w-full h-full rounded-3xl bg-gray-200 flex items-center justify-center">
                 <div className="w-32 h-32 bg-gray-600 rounded-2xl flex items-center justify-center">
+                  <img src="../../public/istockphoto.jpg" className="w-full" alt="photo" />
                   <div className="w-20 h-14 bg-gray-400 rounded-lg"></div>
                 </div>
               </div>
@@ -26,40 +29,31 @@ const HeroSection = () => {
 
           {/* Text Content */}
           <div className="text-left lg:max-w-lg">
-            <p className="text-white text-lg mb-2">A Designer who</p>
-            <h1 className="text-white text-4xl lg:text-5xl font-bold mb-4">
-              Judges a book
+            <h1 className="text-white text-4xl lg:text-5xl text-center lg:text-start font-bold mb-4">
+              Front End Developer
             </h1>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-              by its{' '}
-              <span className="text-purple-400 underline decoration-purple-400">
-                cover
-              </span>
-              <span className="text-white">...</span>
-            </h2>
-            <p className="text-gray-300 text-sm">
-              Because if the cover does not impress you what else can?
+            <p className="text-white text-lg mb-2">
+              with a passion for building responsive, user-friendly websites. I
+              create clean, modern interfaces using HTML, CSS, JavaScript, and
+              React.
             </p>
+            <a href="/public/Eid_Elgohary_FrontEnd_CV.pdf" download target="_blank" rel="noopener noreferrer">
+
+            <button className="bg-purple-600 m-auto  lg:ms-auto  mt-4 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors">
+              <Download className="w-5 h-5" />
+              <span>Download my resume</span>
+            </button>
+            </a>
           </div>
         </div>
 
         {/* Professional Title */}
         <div className="text-center">
           <h3 className="text-white text-3xl lg:text-4xl font-bold mb-4">
-            I'm a Software Engineer.|
+            I'm a front end developer.|
           </h3>
           <p className="text-gray-300 text-lg">
-            Currently, I'm a Software Engineer at{' '}
-            <span className="text-blue-400">📘 Facebook</span>,
-          </p>
-        </div>
-
-        {/* Description */}
-        <div className="mt-12 max-w-2xl mx-auto">
-          <p className="text-gray-300 text-lg leading-relaxed">
-            A self-taught UI/UX designer, functioning in the industry for 3+ years now.
-            I make meaningful and delightful digital products that create an equilibrium
-            between user needs and business goals.
+            always learning, always building
           </p>
         </div>
       </div>

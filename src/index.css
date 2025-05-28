@@ -89,6 +89,7 @@
 @layer base {
   * {
     @apply border-border;
+    text-transform: capitalize
   }
 
   body {
