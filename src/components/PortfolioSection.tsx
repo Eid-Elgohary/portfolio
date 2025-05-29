@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
-import Ecommerce from "../Screenshot 2025-05-27 042014.png";
+import Ecommerce from "../../src/imgs/e-commerce.png";
+import portfolio from "../../src/imgs/portfolio.png";
 
 interface ProjectProps {
   title: string;
@@ -78,7 +79,8 @@ const PortfolioSection = () => {
   const projects: ProjectProps[] = [
     {
       title: "E-Commerce Platform",
-      description:"FreshCart is a modern and responsive e-commerce front-end built with React. The project features essential pages such as Home, Products, Product Details, Cart, Wishlist, and Login. It utilizes Styled Components for component-level styling and leverages several libraries to enhance user experience and interface functionality. The app is structured using React Router for navigation and Context API for state management, ensuring clean code and smooth user interaction.",
+      description:
+        "FreshCart is a modern and responsive e-commerce front-end built with React. The project features essential pages such as Home, Products, Product Details, Cart, Wishlist, and Login. It utilizes Styled Components for component-level styling and leverages several libraries to enhance user experience and interface functionality. The app is structured using React Router for navigation and Context API for state management, ensuring clean code and smooth user interaction.",
       image: Ecommerce,
       technologies: [
         "React",
@@ -90,6 +92,22 @@ const PortfolioSection = () => {
       bgColor: "bg-gradient-to-br from-blue-900/50 to-purple-800/30",
       liveUrl: "https://fresh-cart-aqer.vercel.app/",
       githubUrl: "https://github.com/Eid-Elgohary/fresh-cart.git",
+    },
+    {
+      title: "portfolio",
+      description:
+        "A personal portfolio website designed to showcase my front-end development skills, projects, and professional background. Built using modern web technologies and generated with the help of artificial intelligence to save development time and stay aligned with the latest advancements in technology—especially in AI.",
+      image: portfolio,
+      technologies: [
+        "next.js",
+        "tailwindcss",
+        "typescript",
+        "react-hook-form",
+        "lucide-react",
+      ],
+      bgColor: "bg-gradient-to-br from-blue-900/50 to-purple-800/30",
+      liveUrl: "https://portfolio-ashen-omega-44.vercel.app/",
+      githubUrl: "https://github.com/Eid-Elgohary/portfolio.git",
     },
   ];
 
