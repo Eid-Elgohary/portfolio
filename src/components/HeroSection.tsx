@@ -1,5 +1,6 @@
 import React from "react";
 import { Download } from "lucide-react";
+import placeholder from "../../public/istockphoto.jpg";
 
 const HeroSection = () => {
   return (
@@ -20,7 +21,7 @@ const HeroSection = () => {
             <div className="w-48 h-48 rounded-3xl overflow-hidden bg-gradient-to-br from-purple-600 to-purple-800 p-1 animate-float">
               <div className="w-full h-full rounded-3xl bg-gray-200 flex items-center justify-center">
                 <div className="w-32 h-32 bg-gray-600 rounded-2xl flex items-center justify-center">
-                  <img src="../../public/istockphoto.jpg" className="w-full" alt="photo" />
+                  <img src={placeholder} className="w-full" alt="photo" />
                   <div className="w-20 h-14 bg-gray-400 rounded-lg"></div>
                 </div>
               </div>
@@ -37,12 +38,16 @@ const HeroSection = () => {
               create clean, modern interfaces using HTML, CSS, JavaScript, and
               React.
             </p>
-            <a href="/public/Eid_Elgohary_FrontEnd_CV.pdf" download target="_blank" rel="noopener noreferrer">
-
-            <button className="bg-purple-600 m-auto  lg:ms-auto  mt-4 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors">
-              <Download className="w-5 h-5" />
-              <span>Download my resume</span>
-            </button>
+            <a
+              href="./Eid_Elgohary_FrontEnd_CV.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-purple-600 m-auto  lg:ms-auto  mt-4 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors">
+                <Download className="w-5 h-5" />
+                <span>Download my resume</span>
+              </button>
             </a>
           </div>
         </div>
